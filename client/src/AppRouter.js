@@ -1,5 +1,6 @@
 import React from 'react';
-import {Route, Routes, Redirect } from 'react-router-dom';
+import {Route, Routes } from 'react-router-dom';
+import Shop from './components/pages/Shop';
 import { authRoutes, publicRoutes } from './routes';
 
 const AppRouter = () => {
@@ -8,14 +9,15 @@ const AppRouter = () => {
         <Routes>
             {
             isAuth && authRoutes.map(({path, Component}) => 
-                <Route key={path} path={path} Component={Component}/>
+                <Route key={path} path={path} element={<Component />} exact/>
             )}
             {
             publicRoutes.map(({path, Component}) => 
-                <Route key={path} path={path} Component={Component}/>
+                <Route key={path} path={path} element={<Component />} exact/>
             )}
+            <Route path='*' element={<Shop />} />
         </Routes>
     );
-}
+};
 
 export default AppRouter;

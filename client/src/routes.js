@@ -24,7 +24,7 @@ export const publicRoutes = [
     },
     {
         path: DEVICE_ROUTE + '/:id',
-        Component: Device
+        Component: Device 
     },
     {
         path: LOGIN_ROUTE,
@@ -34,5 +34,5 @@ export const publicRoutes = [
         path: REGISTRATION_ROUTE,
         Component: Auth
     }
-]
+];
 
