@@ -3,4 +3,10 @@ export const devicesLoaded = (newDevices) => {
         type: 'DEVICES_LOADED',
         payload: newDevices
     };
-}
+};
+
+export const userLogin = () => {
+    return {
+        type: 'USER_LOGIN'
+    };
+};

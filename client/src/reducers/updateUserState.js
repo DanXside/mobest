@@ -1,10 +1,18 @@
 const initialState = {
-    isAuth: false
+    user: {
+        isAuth: false
+    }
 };
 
 const updateUserState = (state = initialState, action) => {
     
-return state;
+    switch (action.type) {
+        case 'USER_LOGIN':
+            return {
+                isAuth: true
+            };
+        default: return state;
+    };
 
 };
 
