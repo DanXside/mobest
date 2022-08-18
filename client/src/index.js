@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 
@@ -9,14 +9,14 @@ import DeviceStoreService from './components/mobestStoreService/deviceStoreServi
 
 import store from './store';
 
+export const Context = createContext(null);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Provider store={store} >
+    <Provider store={store}>
       <ErrorBoundry >
-        <DeviceStoreProvider value={DeviceStoreService}>
           <App />
-        </DeviceStoreProvider>
       </ErrorBoundry>
     </Provider>
   </React.StrictMode>

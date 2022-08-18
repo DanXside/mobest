@@ -10,3 +10,9 @@ export const userLogin = () => {
         type: 'USER_LOGIN'
     };
 };
+
+export const userLogout = () => {
+    return {
+        type: 'USER_LOGOUT'
+    };
+};

@@ -1,7 +1,5 @@
 const initialState = {
-    user: {
-        isAuth: false
-    }
+    isAuth: false
 };
 
 const updateUserState = (state = initialState, action) => {
@@ -10,6 +8,10 @@ const updateUserState = (state = initialState, action) => {
         case 'USER_LOGIN':
             return {
                 isAuth: true
+            };
+        case 'USER_LOGOUT':
+            return {
+                isAuth: false
             };
         default: return state;
     };
