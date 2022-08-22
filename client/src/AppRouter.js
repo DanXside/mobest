@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route, Routes } from 'react-router-dom';
-import Shop from './components/pages/Shop';
+import Shop from './components/pages/shop-page/Shop';
 import { authRoutes, publicRoutes } from './routes';
 
 const AppRouter = () => {

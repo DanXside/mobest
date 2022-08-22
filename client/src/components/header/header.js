@@ -8,6 +8,7 @@ import basket from '../../icons/basket.png';
 import { userLogout, userLogin } from '../../actions';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { LOGIN_ROUTE, SHOP_ROUTE } from '../../utils/consts';
 
 class Header extends Component {
 
@@ -16,9 +17,9 @@ class Header extends Component {
         if (isAuth) {
             return (
                 <div className="header">
-                    <div className='header__logo'>MOBEST</div>
+                    <Link to={SHOP_ROUTE} className='header__logo'>MOBEST</Link>
                     <div className='header__icons'>
-                        <Link to='#' onClick={userLogout}>
+                        <Link to={SHOP_ROUTE} onClick={userLogout}>
                             <img src={logOut} alt='logout' />
                         </Link>
                         <Link to='#'>
@@ -34,9 +35,9 @@ class Header extends Component {
 
         return (
             <div className="header">
-                <div className='header__logo'>MOBEST</div>
+                <Link to={SHOP_ROUTE} className='header__logo'>MOBEST</Link>
                 <div className='header__icons'>
-                    <Link to='#' onClick={userLogin}>
+                    <Link to={LOGIN_ROUTE} onClick={userLogin}>
                         <img src={logIn} alt='login' />
                     </Link>
                     <Link to='#'>

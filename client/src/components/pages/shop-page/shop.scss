@@ -1,0 +1,11 @@
+.shop {
+    max-width: 1110px;
+    margin: 0 auto;
+    &__banner {
+        width: 1110px;
+        img {
+            width: 1110px;
+            height: 226px;
+        }
+    }
+}
