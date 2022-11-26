@@ -1,15 +1,62 @@
+import headphones from '../img/headphones.jpg';
 
 const updateDeviceList = (state, action) => {
     if (state === undefined) {
         return {
             devices: [
-                {id: 1, name: 'Apple BYZ S852I', price: 750, img: 'ab4a63f8-66a0-401e-838e-20278e6343bc.jpg', typeId: 2 },
-                {id: 2, name: 'Apple EarPods MNHF2ZMA', price: 2299, img: '34e793c2-5ff4-45cf-bf88-26658cbffbea.jpg', typeId: 2 },
+                {
+                    id: 1, 
+                    name: 'Apple BYZ S852I', 
+                    price: 750, 
+                    img: headphones, 
+                    typeId: 2 
+                },
+                {
+                    id: 2, 
+                    name: 'Apple EarPods MNHF2ZMA', 
+                    price: 2299, 
+                    img: headphones, 
+                    typeId: 2 
+                },
+                {
+                    id: 3, 
+                    name: 'Apple EarPods MNZMA', 
+                    price: 2500, 
+                    img: headphones, 
+                    typeId: 2 
+                },
+                {
+                    id: 4, 
+                    name: 'Apple EarPods MN', 
+                    price: 7000, 
+                    img: headphones, 
+                    typeId: 2 
+                },
+                {
+                    id: 5, 
+                    name: 'Apple EarPods MN227Z', 
+                    price: 8499, 
+                    img: headphones, 
+                    typeId: 2 
+                },
+                {
+                    id: 6, 
+                    name: 'Apple EarPods MNHJ', 
+                    price: 9000, 
+                    img: headphones, 
+                    typeId: 2 
+                },
 
             ],
             types: [
-                {id: 1, name: 'Беспроводные наушники'},
-                {id: 2, name: 'Наушники'}
+                {
+                    id: 2, 
+                    name: 'Наушники'
+                },
+                {
+                    id: 1, 
+                    name: 'Беспроводные наушники'
+                }
             ],
             loading: false,
             error: null
