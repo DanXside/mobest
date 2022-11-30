@@ -1,0 +1,43 @@
+.device-card {
+    position: relative;
+    width: 350px;
+    height: 408px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 15px 22px 64px 22px;
+    &_devImg {
+        width: 220px;
+        margin: 0 auto;
+        img {
+            width: 220px;
+            height: 238px;
+        }
+    }
+    &_favImg {
+        position: absolute;
+        top: 15px;
+        left: 22px;
+    }
+    &_favBut {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    &_info {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 55px;
+    }
+    &_name, &_price {
+        max-width: 145px;
+        font-weight: 600;
+        font-size: 17px;
+        color: #1C1C27;
+    }
+    &_price {
+        color: #FFA542;
+    }
+}

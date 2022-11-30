@@ -8,4 +8,19 @@
             height: 226px;
         }
     }
+    &__wrapper {
+        margin-top: 36px;
+        &_type {
+            font-weight: 600;
+            font-size: 20px;
+            color: #838383;
+        }
+        &_devices {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            grid-auto-rows: 408px;
+            gap: 30px;
+        }
+    }
 }

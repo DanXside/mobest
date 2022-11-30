@@ -25,9 +25,9 @@ class Shop extends Component {
                 <div className='shop__wrapper'>
                     <div className='shop__wrapper_type'>
                         <React.Fragment>
-                            {types.map((type) => {    
-                                if (type.id === 2) {return type.name}
-                            })}
+                            {
+                                types.map((type) => {if (type.id === 2) {return type.name} else {return null}})
+                            }
                         </React.Fragment>
                     </div>
                     <div className='shop__wrapper_devices'>
